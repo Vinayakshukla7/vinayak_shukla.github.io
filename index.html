@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive PortFolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="ext.js" language="javascript"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+<body>
+    <!-- Creating Menu Tabs & Logo at Top Using HTML -->
+    <header>
+        <a href="#" class="logo">Portfolio</a>
+        <div class="toggle" onclick="toggleMenu();"></div>
+        <ul class="menu">
+            <li><a href="#home" onclick="toggleMenu();">Home</a></li>
+            <li><a href="#about" onclick="toggleMenu();">About</a></li>
+            <li><a href="#projects" onclick="toggleMenu();">Projects</a></li>
+            <li><a href="#skills" onclick="toggleMenu();">Skills</a></li>
+            <li><a href="#contact" onclick="toggleMenu();">Contact</a></li>
+        </ul>
+    </header>
+
+    <!-- Creating Banner Layout in HTML -->
+    <section class="banner" id="home">
+        <div class="textBx">
+            <h1>Hello ! I'm</h1>
+            <h2>Vinayak Shukla</h2>
+            <h3>B.Tech Computer Science Student</h3>
+            <a href="#about" class="btn">About Me</a>
+        </div>
+    </section>
+
+    <!-- Creating About Me Layout in HTML -->
+    <section class="about" id="about">
+        <div class="heading">
+            <p>Get to Know me</p>
+            <h2>About Me</h2>
+        </div>
+        <div class="content">
+            <div class="w50">
+                <img src="images/myPic2.jpg" alt="" class="proPic">
+            </div>
+            <div class="contentBx w50">
+                <h3>Who am i?</h3>
+                <h2>I'm <b>Vinayak Shukla</b>, pursuing B.tech in Computer Science from Medicaps University Indore. Recently, stepped into the final year of my degree.</h2>
+                <p>I am an engineering student from INDIA.In the duration of my degree got good command over the programming languages and learned the core concepts of DBMS, OOPs, etc. In the college projects learned how the evaluation of process helps to prioritize tasks, iterate progress, and delivers the work faster.</p><br>
+                <p>I always want to be a productive asset for the organization where I can utilize my knowledge, creativity, and skills which can contribute to certain achievements.</p>
+                <div class="heading bottom">
+                    <a href="images/resume.docx" class="btn round">Download CV</a>
+                    <div class="bt">
+                        <b>Name:</b> Vinayak Shukla<br>
+                        <b>Age:</b> 22
+                    </div>
+                    <div class="bt">
+                        <b>Email:</b> vsvinayak70@gmail.com<br>
+                        <b>Location:</b> INDIA
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Creating Project Layout in HTML -->
+    <section class="projects" id="projects">
+        <div class="heading white">
+            <h2>Projects</h2>
+            <p>Some projects which I created .</p>
+        </div>
+        <div class="content">
+            <div class="projectsBx">
+                <i class="fa fa-shield fa-4x"></i>
+                <h3>Banking Management System.</h3> 
+                <p>Key Skills – C++/OOP.<br><br>This Project includes the general banking functionalities like creating new account, updating account details on deposition/withdrawal of money, display all account , balance enquiry .</p>
+            </div>
+            <div class="projectsBx">
+                <i class="fa fa-shield fa-4x"></i>
+                <h3>Web Scraping Project.</h3>
+                <p>Key Skills – Scrapy/Bs4 Python Library.<br><br>In this Project data is scraped from websites like Amazon and Flipkart. The data extracted results the single csv file which includes almost thousand reviews by user about the products of same type. </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Creating Skills Layout in HTML -->
+
+    <section class="skills" id="skills">
+        <div class="heading">
+            <h2>Skills</h2>
+            <p>Showcasing some of my <b>technical skill.</b></p>
+        </div>
+        <div class="container">
+            <div class="skill">
+                <div class="details">
+                    <span>C</span>
+                    <span>80%</span>
+                </div>
+                <div class="bar">
+                    <div id="C-bar"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="details">
+                    <span>C++</span>
+                    <span>92%</span>
+                </div>
+                <div class="bar">
+                    <div id="Cplus-bar"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="details">
+                    <span>Python</span>
+                    <span>60%</span>
+                </div>
+                <div class="bar">
+                    <div id="Python-bar"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="details">
+                    <span>HTML</span>
+                    <span>80%</span>
+                </div>
+                <div class="bar">
+                    <div id="html-bar"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="details">
+                    <span>CSS</span>
+                    <span>75%</span>
+                </div>
+                <div class="bar">
+                    <div id="css-bar"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="details">
+                    <span>SQL</span>
+                    <span>78%</span>
+                </div>
+                <div class="bar">
+                    <div id="sql-bar"></div>
+                </div>
+            </div>
+           </div>
+    </section>
+
+    <!-- Creating Contact Layout in HTML -->
+    <section class="contact" id="contact">
+        <div class="heading white">
+            <p>Feel free to contact me anytimes</p>
+            <h2>Get in Touch</h2>
+        </div>
+        <div class="content">
+            <div class="contactInfo">
+                <h3>Contact Info</h3>
+                <p>Always available to work if the right opportunity<br> comes along, Feel free to contact me!</p>
+                <div class="contactInfoBx">
+                    <div class="box">
+                        <div class="icon">
+                            <i class="fa fa-map-marker"></i>
+                        </div>
+                        <div class="text">
+                            <h3>Address</h3>
+                            <p>31,Ward 08<br>Govind Vallabh Pant Marg<br>Mandleshwar,451221<br>District : Khargone</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="icon">
+                            <i class="fa fa-phone"></i>
+                        </div>
+                        <div class="text">
+                            <h3>Phone no :</h3>
+                            <p>7772835614</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="icon">
+                            <i class="fa fa-envelope-o"></i>
+                        </div>
+                        <div class="text">
+                            <h3>Email Address</h3>
+                            <p>vsvinayak70@gmail.com</p>
+                        </div>
+                    </div>
+                    <br>
+                    <h3>Social Connect</h3>
+                    <div class="boxSocial">
+                        <div class="icon">
+                            <a href="https://www.facebook.com" target="_blank">
+                                <i class="fa fa-facebook-square"></i>
+                            </a>
+                        </div>
+                        <div class="icon">
+                            <a href="https://www.twitter.com" target="_blank">
+                                <i class="fa fa-twitter-square"></i>
+                            </a>
+                        </div>
+                        <div class="icon">
+                            <a href="https://www.linkedin.com/" target="_blank">
+                                <i class="fa fa-linkedin-square"></i>
+                            </a>
+                        </div>
+                        <div class="icon">
+                            <a href="https://www.instagram.com/?hl=en" target="_blank">
+                                <i class="fa fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="formBx">
+                <form>
+                    <h3>Message Me</h3>
+                    <input type="text" placeholder="Full Name" name="">
+                    <input type="email" placeholder="Email" name="">
+                    <textarea name="" rows="6" id="" placeholder="Your Message"></textarea>
+                    <input type="submit" value="Send Message" name="">
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Creating Footer Layout in HTML -->
+    <footer class="copyright">
+        <p>&copy; 2021, myportfolio.com, Allrights reserved</p>
+    </footer>
+</body>
+</html>
